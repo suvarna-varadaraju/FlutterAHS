@@ -1,0 +1,105 @@
+name: property
+description: A new Flutter project.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  change_app_package_name: ^1.0.0
+
+  cupertino_icons: ^1.0.2
+
+  syncfusion_flutter_pdfviewer: ^23.1.36
+
+  video_player: ^2.7.1
+
+  flutter_shakemywidget: ^1.0.4+1
+
+  flutter_downloader: ^1.11.2
+
+  dio: ^5.3.3
+
+  chewie: ^1.7.0
+
+  flutter_svg: ^2.0.5
+
+  timeline_tile: ^2.0.0
+
+  google_maps_flutter: ^2.5.0
+
+  dropdown_button2: ^2.3.8
+
+  http: ^1.1.0
+  json_serializable: ^6.7.1
+
+  url_launcher: ^6.1.14
+
+  package_info_plus: ^4.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: "^0.9.2"
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/image/logo.jpg"
+
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/montserrat_medium.ttf
+        - asset: assets/fonts/montserrat_semibold.ttf
+        - asset: assets/fonts/montserrat_regular.ttf
+
+
+  assets:
+    - assets/video/
+    - assets/image/
+    - assets/fonts/
+    - assets/image/band.jpg
+    - assets/image/casacanal_1.jpg
+    - assets/image/casacanal_2.jpg
+    - assets/image/casacanal_4.jpg
+    - assets/image/casacanal_5.jpg
+    - assets/image/onecanal_new1.jpg
+    - assets/image/onecanal_new2.jpg
+    - assets/image/onecanal_new3.jpg
+    - assets/image/onecanal_6.jpg
+    - assets/image/onecrescent_new.jpg
+    - assets/image/onecresecent_2.jpg
+    - assets/image/onecresecent_3.jpg
+    - assets/image/onecresecent_4.jpg
+    - assets/image/villa_serenity1.jpg
+    - assets/image/villa_serenity2.jpg
+    - assets/image/villa_amara2.jpg
+    - assets/image/villa_amara1.jpg
+    - assets/image/villa_sunrays2.jpg
+    - assets/image/villa_sunrays1.jpg
+    - assets/image/villa_serene2.jpg
+    - assets/image/villa_serene1.jpg
+    - assets/image/villa_azalea2.jpg
+    - assets/image/villa_azalea1.jpg
+    - assets/image/about_1.jpg
+    - assets/image/about_ahs.jpg
+    - assets/image/about_ash1.jpg
+    - assets/image/history_2017.jpg
+    - assets/image/history_2018.jpg
+    - assets/image/history_2019.jpg
+    - assets/image/history_2020.jpg
+    - assets/image/history_2021.jpg
+    - assets/image/historu_2022.jpg
+    - assets/image/logo.jpg
+    - assets/image/menu.png
