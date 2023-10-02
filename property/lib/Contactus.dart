@@ -284,8 +284,8 @@ class _VideoPlayerScreenState extends State<Contactus> {
                       InkWell(
                       child : SvgPicture.asset('assets/image/ph.svg',
                         semanticsLabel: 'My SVG Picture',
-                        width: 20,
-                        height: 20,
+                        width: 24,
+                        height: 24,
                       ),
                           onTap: () => {
                             _makePhoneCall()
@@ -295,17 +295,17 @@ class _VideoPlayerScreenState extends State<Contactus> {
                       InkWell(
                       child : SvgPicture.asset('assets/image/wtsp.svg',
                         semanticsLabel: 'My SVG Picture',
-                        width: 20,
-                        height: 20,
+                        width: 24,
+                        height: 24,
                       ),
-                        onTap: () => _launchURL("https://wa.me/+971 543090418"),
+                        onTap: () => launchURLForWhatsapp("https://api.whatsapp.com/send/?phone=971543090418"),
                       ),
                       SizedBox(width: 20),
                       InkWell(
                       child: SvgPicture.asset('assets/image/ml.svg',
                         semanticsLabel: 'My SVG Picture',
-                        width: 20,
-                        height: 20,
+                        width: 24,
+                        height: 24,
                       ),
                           onTap: () => {
                             _sendEmail()
@@ -349,19 +349,19 @@ class _VideoPlayerScreenState extends State<Contactus> {
                 InkWell(
                     child: SvgPicture.asset('assets/image/fb.svg',
                       semanticsLabel: 'My SVG Picture',
-                      width: 20,
-                      height: 20,
+                      width: 24,
+                      height: 24,
                     ),
                   onTap: () => {
-                  FacebookPageOpener.openFacebookPage()
+                    openFacebookProfile()
                   }
                 ),
                     SizedBox(width: 20),
                     InkWell(
                     child: SvgPicture.asset('assets/image/insta.svg',
                       semanticsLabel: 'My SVG Picture',
-                      width: 20,
-                      height: 20,
+                      width: 24,
+                      height: 24,
                     ),
                         onTap: () => {
                           InstagramPageOpener._launchInstagram()
@@ -371,8 +371,8 @@ class _VideoPlayerScreenState extends State<Contactus> {
                     InkWell(
                     child: SvgPicture.asset('assets/image/utb.svg',
                       semanticsLabel: 'My SVG Picture',
-                      width: 20,
-                      height: 20,
+                      width: 24,
+                      height: 24,
                     ),
                         onTap: () => {
                           _openYouTubeChannel()
@@ -382,8 +382,8 @@ class _VideoPlayerScreenState extends State<Contactus> {
                     InkWell(
                     child: SvgPicture.asset('assets/image/link.svg',
                       semanticsLabel: 'My SVG Picture',
-                      width: 20,
-                      height: 20,
+                      width: 24,
+                      height: 24,
                     ),
                       onTap: () => _launchURL("https://www.linkedin.com/company/ahsproperties/"),
                     ),
@@ -500,6 +500,14 @@ class _VideoPlayerScreenState extends State<Contactus> {
   _launchURL(String mapurl) async {
     if (await canLaunchUrl(Uri.parse(mapurl))) {
       await launchUrl(Uri.parse(mapurl));
+    } else {
+      throw 'Could not launch $mapurl';
+    }
+  }
+
+  launchURLForWhatsapp(String mapurl) async {
+    if (await canLaunchUrl(Uri.parse(mapurl))) {
+      await launchUrl(Uri.parse(mapurl),mode: LaunchMode.externalNonBrowserApplication);
     } else {
       throw 'Could not launch $mapurl';
     }
@@ -629,6 +637,18 @@ class _VideoPlayerScreenState extends State<Contactus> {
         ),
       ),
     );
+  }
+
+  void openFacebookProfile() async {
+    await launch("fb://profile/people/AHS-Properties/100083320485787/");
+    // Check if the Facebook app is installed
+   /* if (await canLaunch("fb://profile/people/AHS-Properties/100083320485787/")) {
+      // Open the profile in the Facebook app
+      await launch("fb://profile/people/AHS-Properties/100083320485787/");
+    } else {
+      // If the Facebook app is not installed, open in the web browser
+      await launch("https://www.facebook.com/people/AHS-Properties/100083320485787/");
+    }*/
   }
 }
 

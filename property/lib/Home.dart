@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
+import 'Colours.dart';
+
 class Home extends StatefulWidget {
   Home({super.key});
 
@@ -10,14 +12,25 @@ class Home extends StatefulWidget {
 
 class _VideoPlayerScreenState extends State<Home> {
   late VideoPlayerController _controller;
+  double opacity = 1.0;
 
   void initState() {
     super.initState();
+    changeOpacity();
     _controller = VideoPlayerController.asset("assets/video/ash_video.mp4")
       ..initialize().then((value) => {setState(() {})});
     _controller.setLooping(true);
     _controller.setVolume(0.0);
     _controller.play();
+  }
+
+  changeOpacity() {
+    Future.delayed(Duration(seconds: 4), () {
+      setState(() {
+        opacity = opacity == 0.0 ? 1.0 : 0.0;
+        changeOpacity();
+      });
+    });
   }
 
   @override
@@ -38,6 +51,25 @@ class _VideoPlayerScreenState extends State<Home> {
                 width: _controller.value.size?.width ?? 0,
                 height: _controller.value.size?.height ?? 0,
                 child: VideoPlayer(_controller),
+              ),
+            ),
+          ),
+          AnimatedOpacity(
+            opacity: opacity,
+            duration: Duration(seconds: 3),
+            child: Align(
+              alignment: Alignment.center,
+              child: Container(
+                margin: EdgeInsets.only(top: 220.0),// You can adjust the position as needed
+                child: Text(
+                  'Revolutionising Luxury Living',
+                  style: TextStyle(
+                    color: ColorConstants.kPrimaryColor,
+                    fontFamily: 'Montserrat',
+                    fontSize: 16,
+                    fontWeight: FontWeight.w300, // Font weight
+                  ),
+                ),
               ),
             ),
           ),
