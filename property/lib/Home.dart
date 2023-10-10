@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
-
 import 'Colours.dart';
 
 class Home extends StatefulWidget {
@@ -60,7 +59,7 @@ class _VideoPlayerScreenState extends State<Home> {
             child: Align(
               alignment: Alignment.center,
               child: Container(
-                margin: EdgeInsets.only(top: 220.0),// You can adjust the position as needed
+                margin: EdgeInsets.only(top: getMarginTop(context)),
                 child: Text(
                   'Revolutionising Luxury Living',
                   style: TextStyle(
@@ -77,6 +76,17 @@ class _VideoPlayerScreenState extends State<Home> {
         ],
       ),
     );
+  }
+
+  double getMarginTop(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    if (screenSize.shortestSide < 600) {
+      // This is a phone (iPhone or similar)
+      return 230.0; // Adjust the margin for iPhones
+    } else {
+      // This is a tablet (iPad or similar)
+      return 460.0; // Adjust the margin for iPads
+    }
   }
 }
 

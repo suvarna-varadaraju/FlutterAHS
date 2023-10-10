@@ -272,7 +272,7 @@ class _VideoPlayerScreenState extends State<Contactus> {
                 child: Container(
                 width: 60.0,
                 height: 1.0,
-                margin: EdgeInsets.fromLTRB(12.0, 4.0, 12.0, 10.0),
+                margin: EdgeInsets.fromLTRB(14.0, 4.0, 12.0, 10.0),
                 color: ColorConstants.kPrimaryColor,
               ),
               ),
@@ -343,7 +343,7 @@ class _VideoPlayerScreenState extends State<Contactus> {
           ),
               Container(
                 padding: EdgeInsets.only(top:20.0),
-                margin: EdgeInsets.only(left: 8.0),
+                margin: EdgeInsets.only(left: 10.0),
                 child: Row(
                   children: [
                 InkWell(
@@ -353,7 +353,9 @@ class _VideoPlayerScreenState extends State<Contactus> {
                       height: 24,
                     ),
                   onTap: () => {
-                    openFacebookProfile()
+                    //openFacebookProfile()
+                    _launchSocialMediaAppIfInstalled(url:"https://www.facebook.com/people/AHS-Properties/100083320485787/")
+                   // FacebookPageOpener.openFacebookPage()
                   }
                 ),
                     SizedBox(width: 20),
@@ -364,7 +366,8 @@ class _VideoPlayerScreenState extends State<Contactus> {
                       height: 24,
                     ),
                         onTap: () => {
-                          InstagramPageOpener._launchInstagram()
+                    _launchSocialMediaAppIfInstalled(url:"https://www.instagram.com/ahs.properties/")
+                          //InstagramPageOpener._launchInstagram()
                         }
                     ),
                     SizedBox(width: 20),
@@ -375,7 +378,8 @@ class _VideoPlayerScreenState extends State<Contactus> {
                       height: 24,
                     ),
                         onTap: () => {
-                          _openYouTubeChannel()
+                          _launchSocialMediaAppIfInstalled(url:"https://www.youtube.com/@ahsproperties")
+                          //_openYouTubeChannel()
                     }
                     ),
                     SizedBox(width: 20),
@@ -385,7 +389,8 @@ class _VideoPlayerScreenState extends State<Contactus> {
                       width: 24,
                       height: 24,
                     ),
-                      onTap: () => _launchURL("https://www.linkedin.com/company/ahsproperties/"),
+                      onTap: () => _launchSocialMediaAppIfInstalled(url:"https://www.linkedin.com/company/ahsproperties/")
+                      // _launchURL("https://www.linkedin.com/company/ahsproperties/"),
                     ),
                     SizedBox(width: 20),
                   ],
@@ -637,6 +642,20 @@ class _VideoPlayerScreenState extends State<Contactus> {
         ),
       ),
     );
+  }
+
+  Future<void> _launchSocialMediaAppIfInstalled({
+    required String url,
+  }) async {
+    try {
+      bool launched = await launch(url, forceSafariVC: false); // Launch the app if installed!
+
+      if (!launched) {
+        launch(url); // Launch web view if app is not installed!
+      }
+    } catch (e) {
+      launch(url); // Launch web view if app is not installed!
+    }
   }
 
   void openFacebookProfile() async {
