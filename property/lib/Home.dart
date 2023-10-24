@@ -89,7 +89,6 @@ class _VideoPlayerScreenState extends State<Home> {
     }
   }
 }
-
 /*class _VideoPlayerScreenState extends State<Home> {
   late VideoPlayerController _controller;
   late ChewieController _chewieController;
