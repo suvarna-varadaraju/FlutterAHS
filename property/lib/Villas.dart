@@ -86,7 +86,7 @@ class _VideoPlayerScreenState extends State<Villas> {
             children: [
               Container(
                 width: double.infinity,
-                height: 300, // Set the height as needed
+                height: getVideoHeight(context), // Set the height as needed
                 child: VideoPlayer(_controller),
               ),
               // Second layout
@@ -116,7 +116,7 @@ class _VideoPlayerScreenState extends State<Villas> {
               // Third layout
               Container(
                 width: double.infinity,
-                height: 300,
+                height: getVideoHeight(context),
                 child: Stack(
                   alignment: Alignment.center,
                   children: [
@@ -143,7 +143,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                             child: Image.asset(
                               'assets/image/villa_serenity2.jpg', // Replace with your image URL
                               width: double.infinity, // Set the initial width of the image
-                              height: 200, // Set the initial height of the image
+                              height: getVideoHeight(context), // Set the initial height of the image
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -169,7 +169,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                             child: Image.asset(
                               'assets/image/villa_serenity1.jpg', // Replace with your image URL
                               width: double.infinity, // Set the initial width of the image
-                              height: 200, // Set the initial height of the image
+                              height: getVideoHeight(context), // Set the initial height of the image
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -278,7 +278,7 @@ class _VideoPlayerScreenState extends State<Villas> {
               ),
               Container(
                 width: double.infinity,
-                height: 300,
+                height: getVideoHeight(context),
                 child: Stack(
                   alignment: Alignment.center,
                   children: [
@@ -305,7 +305,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                             child: Image.asset(
                               'assets/image/villa_amara2.jpg', // Replace with your image URL
                               width: double.infinity, // Set the initial width of the image
-                              height: 200, // Set the initial height of the image
+                              height: getVideoHeight(context), // Set the initial height of the image
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -331,7 +331,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                             child: Image.asset(
                               'assets/image/villa_amara1.jpg', // Replace with your image URL
                               width: double.infinity, // Set the initial width of the image
-                              height: 200, // Set the initial height of the image
+                              height: getVideoHeight(context), // Set the initial height of the image
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -441,7 +441,7 @@ class _VideoPlayerScreenState extends State<Villas> {
               ),
               Container(
                 width: double.infinity,
-                height: 300,
+                height: getVideoHeight(context),
                 child: Stack(
                   alignment: Alignment.center,
                   children: [
@@ -468,7 +468,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                             child: Image.asset(
                               'assets/image/villa_sunrays2.jpg', // Replace with your image URL
                               width: double.infinity, // Set the initial width of the image
-                              height: 200, // Set the initial height of the image
+                              height: getVideoHeight(context), // Set the initial height of the image
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -494,7 +494,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                             child: Image.asset(
                               'assets/image/villa_sunrays1.jpg', // Replace with your image URL
                               width: double.infinity, // Set the initial width of the image
-                              height: 200, // Set the initial height of the image
+                              height: getVideoHeight(context), // Set the initial height of the image
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -604,7 +604,7 @@ class _VideoPlayerScreenState extends State<Villas> {
               ),
               Container(
                 width: double.infinity,
-                height: 300,
+                height: getVideoHeight(context),
                 child: Stack(
                   alignment: Alignment.center,
                   children: [
@@ -631,7 +631,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                             child: Image.asset(
                               'assets/image/villa_serene2.jpg', // Replace with your image URL
                               width: double.infinity, // Set the initial width of the image
-                              height: 200, // Set the initial height of the image
+                              height: getVideoHeight(context), // Set the initial height of the image
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -657,7 +657,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                             child: Image.asset(
                               'assets/image/villa_serene1.jpg', // Replace with your image URL
                               width: double.infinity, // Set the initial width of the image
-                              height: 200, // Set the initial height of the image
+                              height: getVideoHeight(context), // Set the initial height of the image
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -767,7 +767,7 @@ class _VideoPlayerScreenState extends State<Villas> {
               ),
               Container(
                 width: double.infinity,
-                height: 300,
+                height: getVideoHeight(context),
                 child: Stack(
                   alignment: Alignment.center,
                   children: [
@@ -794,7 +794,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                             child: Image.asset(
                               'assets/image/villa_azalea1.jpg', // Replace with your image URL
                               width: double.infinity, // Set the initial width of the image
-                              height: 200, // Set the initial height of the image
+                              height: getVideoHeight(context), // Set the initial height of the image
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -820,7 +820,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                             child: Image.asset(
                               'assets/image/villa_azalea2.jpg', // Replace with your image URL
                               width: double.infinity, // Set the initial width of the image
-                              height: 200, // Set the initial height of the image
+                              height: getVideoHeight(context), // Set the initial height of the image
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -945,6 +945,17 @@ class _VideoPlayerScreenState extends State<Villas> {
           ),
         )
     );
+  }
+
+  double getVideoHeight(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    if (screenSize.shortestSide < 600) {
+      // This is a phone (iPhone or similar)
+      return 300.0; // Adjust the margin for iPhones
+    } else {
+      // This is a tablet (iPad or similar)
+      return 600.0; // Adjust the margin for iPads
+    }
   }
 
   Widget buildIndicator(int index) {

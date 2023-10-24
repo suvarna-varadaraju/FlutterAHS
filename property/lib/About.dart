@@ -61,7 +61,7 @@ class _VideoPlayerScreenState extends State<About> {
             children: [
               Container(
                 width: double.infinity,
-                height: 300, // Set the height as needed
+                height: getVideoHeight(context), // Set the height as needed
                 child: VideoPlayer(_controller),
               ),
               Container(
@@ -90,7 +90,7 @@ class _VideoPlayerScreenState extends State<About> {
 
               Container(
                 width: double.infinity,
-                height: 300,
+                height: getVideoHeight(context),
                 decoration: const BoxDecoration(
                   color: Colors.white, // Container background color
                   image: DecorationImage(
@@ -120,7 +120,7 @@ class _VideoPlayerScreenState extends State<About> {
               ),
               Container(
                 width: double.infinity,
-                height: 300,
+                height: getVideoHeight(context),
                 decoration: const BoxDecoration(
                   color: Colors.white, // Container background color
                   image: DecorationImage(
@@ -150,7 +150,7 @@ class _VideoPlayerScreenState extends State<About> {
               ),
               Container(
                 width: double.infinity,
-                height: 300,
+                height: getVideoHeight(context),
                 decoration: const BoxDecoration(
                   color: Colors.white, // Container background color
                   image: DecorationImage(
@@ -218,7 +218,7 @@ class _VideoPlayerScreenState extends State<About> {
                       children: <Widget>[
                         cardWidget(image: "assets/image/history_2017.jpg"),
                         Container(
-                          width: 200.0,
+                          width: getVideoHeight(context),
                           margin: EdgeInsets.only(top: 20),
                           child: Text(
                             _currentText,
@@ -242,6 +242,39 @@ class _VideoPlayerScreenState extends State<About> {
     );
   }
 
+  double getVideoHeight(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    if (screenSize.shortestSide < 600) {
+      // This is a phone (iPhone or similar)
+      return 300.0; // Adjust the margin for iPhones
+    } else {
+      // This is a tablet (iPad or similar)
+      return 600.0; // Adjust the margin for iPads
+    }
+  }
+
+  double getImageHeight(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    if (screenSize.shortestSide < 600) {
+      // This is a phone (iPhone or similar)
+      return 240.0; // Adjust the margin for iPhones
+    } else {
+      // This is a tablet (iPad or similar)
+      return 480.0; // Adjust the margin for iPads
+    }
+  }
+
+  double getImageWidth(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    if (screenSize.shortestSide < 600) {
+      // This is a phone (iPhone or similar)
+      return 260.0; // Adjust the margin for iPhones
+    } else {
+      // This is a tablet (iPad or similar)
+      return 520.0; // Adjust the margin for iPads
+    }
+  }
+
   Widget cardWidget({
     required String image,
   }) {
@@ -252,8 +285,8 @@ class _VideoPlayerScreenState extends State<About> {
         children: [
           Image.asset(
             _currentImage, // Replace with your image asset
-            width: 260,
-            height: 240,
+            width: getImageWidth(context),
+            height: getImageHeight(context),
             fit: BoxFit.cover,
           ),
         ],

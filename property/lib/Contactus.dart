@@ -70,7 +70,7 @@ class _VideoPlayerScreenState extends State<Contactus> {
             children: [
               Container(
                 width: double.infinity,
-                height: 300, // Set the height as needed
+                height: getVideoHeight(context), // Set the height as needed
                 child: VideoPlayer(_controller),
               ),
               Padding(
@@ -185,7 +185,7 @@ class _VideoPlayerScreenState extends State<Contactus> {
               ),
               Container(
                 width: double.infinity,
-                height: 400,
+                height: getMap(context),
                 child: GoogleMap( //Map widget from google_maps_flutter package
                   zoomGesturesEnabled: true, //enable Zoom in, out on map
                   initialCameraPosition: CameraPosition( //innital position in map
@@ -617,6 +617,28 @@ class _VideoPlayerScreenState extends State<Contactus> {
         ),
       ),
     );
+  }
+
+  double getVideoHeight(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    if (screenSize.shortestSide < 600) {
+      // This is a phone (iPhone or similar)
+      return 300.0; // Adjust the margin for iPhones
+    } else {
+      // This is a tablet (iPad or similar)
+      return 600.0; // Adjust the margin for iPads
+    }
+  }
+
+  double getMap(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    if (screenSize.shortestSide < 600) {
+      // This is a phone (iPhone or similar)
+      return 400.0; // Adjust the margin for iPhones
+    } else {
+      // This is a tablet (iPad or similar)
+      return 600.0; // Adjust the margin for iPads
+    }
   }
 
   Widget _buildTextFieldWIthoutBorder({

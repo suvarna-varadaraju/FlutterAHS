@@ -65,7 +65,7 @@ class _VideoPlayerScreenState extends State<Home> {
                   style: TextStyle(
                     color: ColorConstants.kPrimaryColor,
                     fontFamily: 'Montserrat',
-                    fontSize: 16,
+                    fontSize: getTextSize(context),
                     fontWeight: FontWeight.w300, // Font weight
                   ),
                 ),
@@ -86,6 +86,17 @@ class _VideoPlayerScreenState extends State<Home> {
     } else {
       // This is a tablet (iPad or similar)
       return 460.0; // Adjust the margin for iPads
+    }
+  }
+
+  double getTextSize(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    if (screenSize.shortestSide < 600) {
+      // This is a phone (iPhone or similar)
+      return 16; // Adjust the margin for iPhones
+    } else {
+      // This is a tablet (iPad or similar)
+      return 22; // Adjust the margin for iPads
     }
   }
 }

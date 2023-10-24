@@ -122,7 +122,7 @@ class _VideoPlayerScreenState extends State<location> {
               ),
               Container(
                 width: double.infinity,
-                height: 300,
+                height: getVideoHeight(context),
                 child: GoogleMap( //Map widget from google_maps_flutter package
                   zoomGesturesEnabled: true, //enable Zoom in, out on map
                   initialCameraPosition: CameraPosition( //innital position in map
@@ -283,6 +283,17 @@ class _VideoPlayerScreenState extends State<location> {
       return "https://goo.gl/maps/CdLT53vUyujd63wF9";
     } else {
       return "https://goo.gl/maps/vMfZ9dYCu3ZmHjXQ8"; // You can provide a default title for other cases
+    }
+  }
+
+  double getVideoHeight(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    if (screenSize.shortestSide < 600) {
+      // This is a phone (iPhone or similar)
+      return 300.0; // Adjust the margin for iPhones
+    } else {
+      // This is a tablet (iPad or similar)
+      return 600.0; // Adjust the margin for iPads
     }
   }
 

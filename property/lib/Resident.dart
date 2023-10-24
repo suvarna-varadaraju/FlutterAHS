@@ -80,7 +80,7 @@ class _VideoPlayerScreenState extends State<Resident> {
         children: [
           Container(
             width: double.infinity,
-            height: 300, // Set the height as needed
+            height: getVideoHeight(context), // Set the height as needed
             child: VideoPlayer(_controller),
           ),
           // Second layout
@@ -110,7 +110,7 @@ class _VideoPlayerScreenState extends State<Resident> {
           // Third layout
           Container(
             width: double.infinity,
-            height: 300,
+            height: getVideoHeight(context),
             child: Stack(
               alignment: Alignment.center,
               children: [
@@ -137,7 +137,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                         child: Image.asset(
                           'assets/image/casacanal_4.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
-                          height: 200, // Set the initial height of the image
+                          height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -174,7 +174,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                         child: Image.asset(
                           'assets/image/casacanal_1.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
-                          height: 200, // Set the initial height of the image
+                          height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -200,7 +200,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                         child: Image.asset(
                           'assets/image/casacanal_2.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
-                          height: 200, // Set the initial height of the image
+                          height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -226,7 +226,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                         child: Image.asset(
                           'assets/image/casacanal_5.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
-                          height: 200, // Set the initial height of the image
+                          height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -319,7 +319,7 @@ class _VideoPlayerScreenState extends State<Resident> {
             ),
           Container(
             width: double.infinity,
-            height: 300,
+            height: getVideoHeight(context),
             child: Stack(
               alignment: Alignment.center,
               children: [
@@ -346,7 +346,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                         child: Image.asset(
                           'assets/image/onecanal_new1.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
-                          height: 200, // Set the initial height of the image
+                          height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -372,7 +372,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                         child: Image.asset(
                           'assets/image/onecanal_new2.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
-                          height: 200, // Set the initial height of the image
+                          height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -398,7 +398,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                         child: Image.asset(
                           'assets/image/onecanal_new3.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
-                          height: 200, // Set the initial height of the image
+                          height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -424,7 +424,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                         child: Image.asset(
                           'assets/image/onecanal_6.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
-                          height: 200, // Set the initial height of the image
+                          height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -515,7 +515,7 @@ class _VideoPlayerScreenState extends State<Resident> {
           ),
           Container(
             width: double.infinity,
-            height: 300,
+            height: getVideoHeight(context),
             child: Stack(
               alignment: Alignment.center,
               children: [
@@ -542,7 +542,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                         child: Image.asset(
                           'assets/image/onecrescent_new.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
-                          height: 200, // Set the initial height of the image
+                          height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -568,7 +568,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                         child: Image.asset(
                           'assets/image/onecresecent_2.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
-                          height: 200, // Set the initial height of the image
+                          height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -594,7 +594,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                         child: Image.asset(
                           'assets/image/onecresecent_3.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
-                          height: 200, // Set the initial height of the image
+                          height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -620,7 +620,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                         child: Image.asset(
                           'assets/image/onecresecent_4.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
-                          height: 200, // Set the initial height of the image
+                          height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -726,6 +726,17 @@ class _VideoPlayerScreenState extends State<Resident> {
       ),
       )
     );
+  }
+
+  double getVideoHeight(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    if (screenSize.shortestSide < 600) {
+      // This is a phone (iPhone or similar)
+      return 300.0; // Adjust the margin for iPhones
+    } else {
+      // This is a tablet (iPad or similar)
+      return 600.0; // Adjust the margin for iPads
+    }
   }
 
   Widget buildIndicator(int index) {
