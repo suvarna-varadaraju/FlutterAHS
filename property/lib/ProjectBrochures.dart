@@ -389,26 +389,26 @@ class _VideoPlayerScreenState extends State<ProjectBrochures> {
                 } else if (projectType[index] == '3 Bedroom Penthouse') {
                   Navigator.push(context, MaterialPageRoute(
                       builder: (context) => PDFViwer(
-                          pdfUrl: 'https://drive.google.com/uc?export=view&id=1pzd_GqyrFA5DAJq_vGrmU4Wczw8kgLGX',projectType: myString,downloadUrl:"https://drive.google.com/uc?export=download&id=1MAnKv8ASoKeVP6NtwttBB4eEe7c7hXb3")));
+                          pdfUrl: 'https://drive.google.com/uc?export=view&id=1NjQrQIVQvI7VKImLxwz7DhvlChB-CNvO',projectType: myString,downloadUrl:"https://drive.google.com/uc?export=download&id=1MAnKv8ASoKeVP6NtwttBB4eEe7c7hXb3")));
                 } else if (projectType[index] == 'Garden Villa') {
                   Navigator.push(
                       context, MaterialPageRoute(builder: (context) =>
                       PDFViwer(
-                          pdfUrl: 'https://drive.google.com/uc?export=view&id=1UMCNH5fgdMZ2HGQVavFv47eLX3sP7jNv',projectType: myString,downloadUrl:"https://drive.google.com/uc?export=download&id=1am1wjHuBopyHvr09hi_CXw19eqdV9N34")));
+                          pdfUrl: 'https://drive.google.com/uc?export=view&id=1ID7GaxuWE75P7dgECzhii6RiS1kaMr_L',projectType: myString,downloadUrl:"https://drive.google.com/uc?export=download&id=1am1wjHuBopyHvr09hi_CXw19eqdV9N34")));
                 }else if (projectType[index] == '4 Bedroom Sky Villa') {
                   Navigator.push(context, MaterialPageRoute(
                       builder: (context) => PDFViwer(
-                          pdfUrl: 'https://drive.google.com/uc?export=view&id=1TdHe0-jiB_VjSHv5Zxmt6NOPSlbykmiM',projectType: myString,downloadUrl:"https://drive.google.com/uc?export=download&id=1Sp6cySRYxLb6-pzeA7sFNTR_9B91peHA")));
+                          pdfUrl: 'https://drive.google.com/uc?export=view&id=1S7VuROdeY-l4qQZygdts2s0rMk9ODkPv',projectType: myString,downloadUrl:"https://drive.google.com/uc?export=download&id=1Sp6cySRYxLb6-pzeA7sFNTR_9B91peHA")));
                 } else if (projectType[index] == '5 Bedroom Penthouse') {
                   Navigator.push(
                       context, MaterialPageRoute(builder: (context) =>
                       PDFViwer(
-                          pdfUrl: 'https://drive.google.com/uc?export=view&id=1wm1YEBW6pKzXHgQqJkLOPnHDT0fGcMxE',projectType: myString,downloadUrl:"https://drive.google.com/uc?export=download&id=1ie3KMLMsxvcbtmZCw9D4mL2VxHqqbJtd")));
+                          pdfUrl: 'https://drive.google.com/uc?export=view&id=1sOZqTTbiijD0n0nse3yUGziB5SQw7ift',projectType: myString,downloadUrl:"https://drive.google.com/uc?export=download&id=1ie3KMLMsxvcbtmZCw9D4mL2VxHqqbJtd")));
                 } else if (projectType[index] == '6 Bedroom Sky Mansion') {
                   Navigator.push(
                       context, MaterialPageRoute(builder: (context) =>
                       PDFViwer(
-                          pdfUrl: 'https://drive.google.com/uc?export=view&id=1mPjgF_x0wxjnb3RKVR5UC-YuPRpBgWu8',projectType: myString,downloadUrl:"https://drive.google.com/uc?export=download&id=1am1wjHuBopyHvr09hi_CXw19eqdV9N34")));
+                          pdfUrl: 'https://drive.google.com/uc?export=view&id=11dXed_UU0JlupnXe5PZS_7ObLaPOuWpE',projectType: myString,downloadUrl:"https://drive.google.com/uc?export=download&id=1am1wjHuBopyHvr09hi_CXw19eqdV9N34")));
                 } else if (projectType[index] == 'Location') {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => location(latlong: myString)));
                 } else if (projectType[index] == 'Website') {
