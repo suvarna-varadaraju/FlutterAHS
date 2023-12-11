@@ -141,7 +141,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                               );
                             },
                             child: Image.asset(
-                              'assets/image/villa_serenity2.jpg', // Replace with your image URL
+                              'assets/image/villa_serenity.jpg', // Replace with your image URL
                               width: double.infinity, // Set the initial width of the image
                               height: getVideoHeight(context), // Set the initial height of the image
                               fit: BoxFit.cover,
@@ -241,7 +241,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                         ]),
                     SizedBox(height: 4),
 
-                    Row(
+                    /*Row(
                         children: [
                           Text("Size:", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
                           Text(" BUA 17,000 SqFt",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
@@ -250,8 +250,8 @@ class _VideoPlayerScreenState extends State<Villas> {
                         children: [
                           Text("       ", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
                           Text("  Plot 15,000 SqFt",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
-                        ]),
-                    SizedBox(height: 4),
+                        ]),*/
+                    //SizedBox(height: 4),
 
                     Row(children: [
                           Text("Status: Available", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
@@ -403,7 +403,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                         ]),
                     SizedBox(height: 4),
 
-                    Row(
+                    /*Row(
                         children: [
                           Text("Size:", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
                           Text(" BUA 45,000 SqFt",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
@@ -412,8 +412,8 @@ class _VideoPlayerScreenState extends State<Villas> {
                         children: [
                           Text("       ", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
                           Text("  Plot 45,000 SqFt",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
-                        ]),
-                    SizedBox(height: 4),
+                        ]),*/
+                    //SizedBox(height: 4),
 
                     Row(children: [
                       Text("Status: Sold", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
@@ -566,7 +566,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                         ]),
                     SizedBox(height: 4),
 
-                    Row(
+                    /*Row(
                         children: [
                           Text("Size:", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
                           Text(" BUA 13,500 SqFt",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
@@ -575,8 +575,8 @@ class _VideoPlayerScreenState extends State<Villas> {
                         children: [
                           Text("       ", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
                           Text("  Plot 10,500 SqFt",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
-                        ]),
-                    SizedBox(height: 4),
+                        ]),*/
+                    //SizedBox(height: 4),
 
                     Row(children: [
                       Text("Status: Sold", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
@@ -729,7 +729,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                         ]),
                     SizedBox(height: 4),
 
-                    Row(
+                    /*Row(
                         children: [
                           Text("Size:", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
                           Text(" BUA 13,500 SqFt",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
@@ -739,7 +739,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                           Text("       ", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
                           Text("  Plot 10,500 SqFt",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
                         ]),
-                    SizedBox(height: 4),
+                    SizedBox(height: 4),*/
 
                     Row(children: [
                       Text("Status: Sold", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
@@ -892,7 +892,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                         ]),
                     SizedBox(height: 4),
 
-                    Row(
+                   /* Row(
                         children: [
                           Text("Size:", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
                           Text(" BUA 13,500 SqFt",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
@@ -902,7 +902,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                           Text("       ", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
                           Text("  Plot 10,500 SqFt",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
                         ]),
-                    SizedBox(height: 4),
+                    SizedBox(height: 4),*/
 
                     Row(children: [
                       Text("Status: Sold", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),

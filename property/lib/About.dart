@@ -154,7 +154,7 @@ class _VideoPlayerScreenState extends State<About> {
                 decoration: const BoxDecoration(
                   color: Colors.white, // Container background color
                   image: DecorationImage(
-                    image: AssetImage('assets/image/casacanal_1.jpg'), // Replace with your image asset path
+                    image: AssetImage('assets/image/about_ash1.jpg'), // Replace with your image asset path
                     fit: BoxFit.cover, // Adjust how the image fits the container
                   ),
                 ),
@@ -670,7 +670,7 @@ class _VideoPlayerScreenState extends State<About> {
       _containerColor2021 = ColorConstants.lite_gold;
       _containerColor2022 = ColorConstants.lite_gold;
       _containerColor2023 = ColorConstants.kPrimaryColor;
-      _currentImage = 'assets/image/casacanal_1.jpg';
+      _currentImage = 'assets/image/casacanal_10.jpg';
       _currentText = "AHS Properties launched Casa Canal in 2023, a groundbreaking architectural project.\n\n" +
           "Exclusive interiors by Fendi Casa.\n" +
           "AHS Properties continues to meticulously craft residences with spacious layouts and state-of-the-art amenities with breathtaking views to enhance the living experience for residents.\n\n" +
