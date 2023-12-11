@@ -24,7 +24,7 @@ class _VideoPlayerScreenState extends State<Resident> {
 
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.asset("assets/video/casacanal_5sec.mp4")
+    _controller = VideoPlayerController.asset("assets/video/casacanal.mp4")
       ..initialize().then((value) => {setState(() {})});
     _controller.setLooping(true);
     _controller.setVolume(0.0);
@@ -135,7 +135,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                           );
                         },
                         child: Image.asset(
-                          'assets/image/casacanal_4.jpg', // Replace with your image URL
+                          'assets/image/casacanal_1.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
                           height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
@@ -172,7 +172,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                           );
                         },
                         child: Image.asset(
-                          'assets/image/casacanal_1.jpg', // Replace with your image URL
+                          'assets/image/casacanal_2.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
                           height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
@@ -198,7 +198,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                           );
                         },
                         child: Image.asset(
-                          'assets/image/casacanal_2.jpg', // Replace with your image URL
+                          'assets/image/casacanal_3.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
                           height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
@@ -224,7 +224,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                           );
                         },
                         child: Image.asset(
-                          'assets/image/casacanal_5.jpg', // Replace with your image URL
+                          'assets/image/casacanal_4.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
                           height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
@@ -295,7 +295,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                   Row(
                       children: [
                     Text("Project Value", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
-                    Text(": \$800 Million",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
+                    Text(": \$850 Million",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
                   ]),
 
             Container(
@@ -344,7 +344,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                           );
                         },
                         child: Image.asset(
-                          'assets/image/onecanal_new1.jpg', // Replace with your image URL
+                          'assets/image/onecanal_1.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
                           height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
@@ -370,7 +370,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                           );
                         },
                         child: Image.asset(
-                          'assets/image/onecanal_new2.jpg', // Replace with your image URL
+                          'assets/image/onecanal_2.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
                           height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
@@ -396,7 +396,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                           );
                         },
                         child: Image.asset(
-                          'assets/image/onecanal_new3.jpg', // Replace with your image URL
+                          'assets/image/onecanal_3.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
                           height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
@@ -422,7 +422,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                           );
                         },
                         child: Image.asset(
-                          'assets/image/onecanal_6.jpg', // Replace with your image URL
+                          'assets/image/onecanal_4.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
                           height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
@@ -491,7 +491,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                 Row(
                     children: [
                       Text("Project Value", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
-                      Text(": \$400 Million",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
+                      Text(": \$450 Million",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
                     ]),
 
                 Container(

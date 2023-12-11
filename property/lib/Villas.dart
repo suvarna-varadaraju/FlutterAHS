@@ -237,7 +237,7 @@ class _VideoPlayerScreenState extends State<Villas> {
                     Row(
                         children: [
                           Text("Project Value", style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w500,color: Colors.black)),
-                          Text(": \$35 Million",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
+                          Text(": \$35.5 Million",style: const TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
                         ]),
                     SizedBox(height: 4),
 

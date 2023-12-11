@@ -163,13 +163,13 @@ class _VideoPlayerScreenState extends State<About> {
                 padding: const EdgeInsets.all(10.0),
               ),
               Container(
-                child: const Column(
+                child: Column(
                     children: [
                       Text("AHS PROPERTIES", style: TextStyle(fontSize: 16,fontFamily: 'Montserrat',fontWeight: FontWeight.bold,color: ColorConstants.kLiteBlack)),
                       SizedBox(height: 10),
                       Padding(
                         padding: EdgeInsets.all(15), //apply padding to all four sides
-                        child: Text("AHS Properties redefines luxury living, worth \$1.5B. In a year, they achieved milestones: sold 3 Palm Jumeirah villas for \$475M, launched another for \$45M. Leading ultra-luxury with new projects at \$700M in Dubai Water Canal, Palm Jumeirah. Sold 3 villas for \$75M, GDP stays at \$1.5B. Unveiled \$45M Emirates Hills mansion, a new opulent era.",
+                        child: Text("AHS Properties has redefined luxury living with a gross development value of \$1.65 billion. Within a year, they achieved remarkable milestones, including selling three villas in Palm Jumeirah for \$75 million and launching another for \$45 million. They now lead the future of ultra-luxury market with new projects in Dubai Water Canal and Palm Jumeirah, totaling a gross development value of over \$1.65 billion.",
                             textAlign: TextAlign.center,
                             style: TextStyle(fontSize: 14,fontFamily: 'Montserrat',fontWeight: FontWeight.w300,color: Colors.black)),
                       ),
@@ -334,7 +334,7 @@ class _VideoPlayerScreenState extends State<About> {
                 ),
               )
           ),
-          InkWell(
+         /* InkWell(
             onTap: (){
               _changeImageAndText2018();
             },
@@ -370,8 +370,8 @@ class _VideoPlayerScreenState extends State<About> {
                 padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 1.0),
               ),
             ),
-          ),
-          InkWell(
+          ),*/
+         /* InkWell(
             onTap: (){
               _changeImageAndText2019();
             },
@@ -407,7 +407,7 @@ class _VideoPlayerScreenState extends State<About> {
                 padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 1.0),
               ),
             ),
-          ),
+          ),*/
           InkWell(
             onTap: (){
               _changeImageAndText2020();
@@ -573,8 +573,8 @@ class _VideoPlayerScreenState extends State<About> {
       _containerColor2023 = ColorConstants.lite_gold;
       _currentImage = 'assets/image/history_2017.jpg';
       _currentText = "AHS Group was established in 2017 with a clear vision for making a positive impact on residential communities.\n\n" +
-          "The founder, Mr. Abbas Sajwani, lead the company with a passion for enriching people's lives.\n\n" +
-          "AHS Group sought to inspire and empower individuals through its innovative solutions and services.";
+      "The founder, Mr. Abbas Sajwani, lead the company with a passion for enriching people's lives.\n\n" +
+      "AHS Group sought to inspire and empower individuals through its innovative solutions and services.";
     });
   }
 
@@ -620,9 +620,10 @@ class _VideoPlayerScreenState extends State<About> {
       _containerColor2022 = ColorConstants.lite_gold;
       _containerColor2023 = ColorConstants.lite_gold;
       _currentImage = 'assets/image/history_2020.jpg';
-      _currentText =  "AHS Investments was established in 2020 with a clear vision for creating long-term value through a diversified portfolio of private and public equity investments.\n\n" +
-          "The company's unwavering commitment to sound investment principles and rigorous due diligence has enabled it to build an impressive asset base of over \$150 million.\n\n" +
-          "AHS Investments is dedicated to identifying and supporting innovative companies and corporate entities that have the potential to transform industries and create meaningful change for society.\n";
+      _currentText =  "AHS Investments was established in 2020 with a clear vision for creating long-term value with a focus on a diversified portfolio of private and public equity investments.\n\n" +
+          "AHS Investments reached an impressive asset base of over \$150 million.\n\n" +
+          "The company is dedicated to identifying and supporting innovative companies and corporate entities.\n\n" +
+          "AHS Investments goal is to transform industries and create meaningful change for society.\n";
     });
   }
 
@@ -636,9 +637,10 @@ class _VideoPlayerScreenState extends State<About> {
       _containerColor2022 = ColorConstants.lite_gold;
       _containerColor2023 = ColorConstants.lite_gold;
       _currentImage = 'assets/image/history_2021.jpg';
-      _currentText = "AHS Properties was founded with a bold ambition to create exceptional real estate developments that exceed expectations and enhance the lives of residents and communities.\n\n" +
-          "The company's first projects, including 3 villas in Palm Jumeirah and 1 in Emirates Hills, set a high bar for quality, innovation, and design.\n\n" +
-          "AHS Properties has quickly emerged as a leader in the industry, achieving numerous milestones and accolades in its first year of operation and inspiring others to pursue excellence and make a positive impact on the world.\n";
+      _currentText = "AHS Properties was founded in 2021 by Mr. Abbas Sajwani.\n\n" +
+          "Focusing on exceptional real estate developments. First projects include 3 Villas in Palm Jumeirah and 1 Villa in Emirates Hills.\n\n" +
+          "The company quickly emerged as a leader in the industry, setting high bar for quality, innovation, and design.\n\n" +
+          "AHS Properties achieved numerous milestones and accolades in first year of operations.\n";
     });
   }
 
@@ -652,9 +654,10 @@ class _VideoPlayerScreenState extends State<About> {
       _containerColor2022 = ColorConstants.kPrimaryColor;
       _containerColor2023 = ColorConstants.lite_gold;
       _currentImage = 'assets/image/historu_2022.jpg';
-      _currentText = "AHS Properties sold three Palm villas for \$475 million.\n\n" +
+      _currentText = "AHS Properties sold three Palm villas for \$75 million.\n\n" +
           "AHS launched a new ultra-luxury villa in Palm Jumeirah for \$45 million.\n\n" +
-          "AHS announced two new projects in Dubai Water Canal and Palm Jumeirah, bringing the company's total gross development value to over \$550 million.";
+          "AHS announced two new projects in Dubai Water Canal and Palm Jumeirah. \n\n"+
+          "The company's Gross Development Value (GDV) has reached over \$1.5 billion.\n";
     });
   }
 
@@ -668,8 +671,11 @@ class _VideoPlayerScreenState extends State<About> {
       _containerColor2022 = ColorConstants.lite_gold;
       _containerColor2023 = ColorConstants.kPrimaryColor;
       _currentImage = 'assets/image/casacanal_1.jpg';
-      _currentText = "In 2023, AHS Properties launched an extraordinary project called Casa Canal,marking a significant milestone in architectural innovation.\n\n" +
-          "This groundbreaking development combines cutting-edge design, sustainable technology, and unparalleled luxury. Situated alongside a serene canal.\n\n" + "Casa Canal offers residents a harmonious blend of natural beauty and urban sophistication. \n\n"+"The meticulously crafted residences boast spacious layouts, state-of-the-art amenities, and breathtaking views, providing an unmatched living experience.";
+      _currentText = "AHS Properties launched Casa Canal in 2023, a groundbreaking architectural project.\n\n" +
+          "Exclusive interiors by Fendi Casa.\n" +
+          "AHS Properties continues to meticulously craft residences with spacious layouts and state-of-the-art amenities with breathtaking views to enhance the living experience for residents.\n\n" +
+          "AHS Properties sells Dubai ultra-luxury penthouse for \$50m. \n\n" +
+          "The company's Gross Development Value (GDV) has reached over \$1.65 billion.\n";
     });
   }
 }
