@@ -135,7 +135,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                           );
                         },
                         child: Image.asset(
-                          'assets/image/casacanal_1.jpg', // Replace with your image URL
+                          'assets/image/casacanal_12.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
                           height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
@@ -172,7 +172,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                           );
                         },
                         child: Image.asset(
-                          'assets/image/casacanal_2.jpg', // Replace with your image URL
+                          'assets/image/casacanal_10.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
                           height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
@@ -198,7 +198,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                           );
                         },
                         child: Image.asset(
-                          'assets/image/casacanal_3.jpg', // Replace with your image URL
+                          'assets/image/casacanal_11.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
                           height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
@@ -224,7 +224,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                           );
                         },
                         child: Image.asset(
-                          'assets/image/casacanal_4.jpg', // Replace with your image URL
+                          'assets/image/casacanal_13.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
                           height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,
@@ -422,7 +422,7 @@ class _VideoPlayerScreenState extends State<Resident> {
                           );
                         },
                         child: Image.asset(
-                          'assets/image/onecanal_4.jpg', // Replace with your image URL
+                          'assets/image/onecanal_7.jpg', // Replace with your image URL
                           width: double.infinity, // Set the initial width of the image
                           height: getVideoHeight(context), // Set the initial height of the image
                           fit: BoxFit.cover,

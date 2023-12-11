@@ -69,20 +69,20 @@ flutter:
     - assets/image/
     - assets/fonts/
     - assets/image/band.jpg
-    - assets/image/casacanal_1.jpg
-    - assets/image/casacanal_2.jpg
-    - assets/image/casacanal_3.jpg
-    - assets/image/casacanal_4.jpg
+    - assets/image/casacanal_12.jpg
+    - assets/image/casacanal_10.jpg
+    - assets/image/casacanal_11.jpg
+    - assets/image/casacanal_13.jpg
     - assets/image/onecanal_1.jpg
     - assets/image/onecanal_2.jpg
     - assets/image/onecanal_3.jpg
-    - assets/image/onecanal_4.jpg
+    - assets/image/onecanal_7.jpg
     - assets/image/onecrescent_new.jpg
     - assets/image/onecresecent_2.jpg
     - assets/image/onecresecent_3.jpg
     - assets/image/onecresecent_4.jpg
     - assets/image/villa_serenity1.jpg
-    - assets/image/villa_serenity2.jpg
+    - assets/image/villa_serenity.jpg
     - assets/image/villa_amara2.jpg
     - assets/image/villa_amara1.jpg
     - assets/image/villa_sunrays2.jpg
@@ -100,5 +100,4 @@ flutter:
     - assets/image/history_2020.jpg
     - assets/image/history_2021.jpg
     - assets/image/historu_2022.jpg
-    - assets/image/logo.jpg
     - assets/image/menu.png
